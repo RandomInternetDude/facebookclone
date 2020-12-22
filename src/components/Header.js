@@ -46,7 +46,7 @@ function Header() {
             </div>
             <div className="header__right">
                 <div className="header__info">
-                    <Avatar />
+                    <Avatar src="https://avatars2.githubusercontent.com/u/29186781?s=460&u=e14a1dec89530d5427db49b2efbdb70db55fbb29&v=4" />
                 </div>
 
                 <IconButton>
