@@ -1,8 +1,9 @@
-import React from 'react'
-import './story.css';
+import React from 'react';
+import { Avatar } from '@material-ui/core';
+import '../css/Story.css';
 
 
-function Story({image, profilesrc, title}) {
+function Story({image, profileSrc, title}) {
     return (
         <div className='story' style={{ backgroundImage: `url(${image})` }}>
         <Avatar src={profileSrc} className='story__avatar' />
