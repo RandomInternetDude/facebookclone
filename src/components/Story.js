@@ -1,10 +1,13 @@
 import React from 'react'
+import './story.css';
 
-function Story() {
+
+function Story({image, profilesrc, title}) {
     return (
-        <div>
-            
-        </div>
+        <div className='story' style={{ backgroundImage: `url(${image})` }}>
+        <Avatar src={profileSrc} className='story__avatar' />
+        <h4>{title}</h4>
+      </div>
     )
 }
 
