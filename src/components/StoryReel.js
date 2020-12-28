@@ -13,8 +13,8 @@ function StoryReel() {
         <div className='storyReel'>
                 <Story image={Avery} profileSrc={Avery} title={'Avery Rice'} />
                 <Story image={alanis} profileSrc={alanis} title={'Alanis Rivera'} />
-                <Story image={jake} profileSrc={jake} title={'Alanis Rivera'} />
-                <Story image={me} profileSrc={myprofile} title={'Alanis Rivera'} />
+                <Story image={jake} profileSrc={jake} title={'Jake Bamforth'} />
+                <Story image={me} profileSrc={myprofile} title={'Joey Rivera'} />
         </div>
     )
 }
