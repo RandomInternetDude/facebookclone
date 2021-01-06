@@ -5,27 +5,33 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { useStateValue } from '../context/StateProvider';
-import db from '../config/firebase';
-import firebase from 'firebase';
+// import db from '../config/firebase';
+// import firebase from 'firebase';
 
 const MessageSender = () => {
   const [input, setInput] = useState('');
   const [imageUrl, setImageUrl] = useState('');
-  const [{ user }] = useStateValue();
+  // const [{ user }] = useStateValue();
+
+  const user = {
+    displayName:"foo",
+    photoURL:''
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setInput('');
     setImageUrl('');
 
-    db.collection('Posts').add({
-      message: input,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      profilePic: user.photoURL,
-      username: user.displayName,
-      image: imageUrl,
-    });
+  //   db.collection('Posts').add({
+  //     message: input,
+  //     timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+  //     profilePic: user.photoURL,
+  //     username: user.displayName,
+  //     image: imageUrl,
+  //   });
   };
+  
 
   return (
     <div className='messageSender'>
